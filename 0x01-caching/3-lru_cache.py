@@ -15,7 +15,7 @@ class LRUCache(BaseCaching):
         super().__init__()
         self.usage = []
 
-        def put(self, key, item):
+    def put(self, key, item):
             """
             cache a key-value pair
             """
@@ -32,7 +32,7 @@ class LRUCache(BaseCaching):
                 self.usage.append(key)
                 self.cache_data[key] = item
 
-        def get(self, key):
+    def get(self, key):
             """
             Return the value linked to a given key
             """
