@@ -32,7 +32,7 @@ class MRUCache(BaseCaching):
                 del self.usage[self.usage.index(key)]
             self.usage.append(key)
             self.cache_data[key] = item
-    
+
     def get(self, key):
         """
         Return the value linked to a given key, or None
@@ -41,4 +41,4 @@ class MRUCache(BaseCaching):
             del self.usage[self.usage.index(key)]
             self.usage.append(key)
             return self.cache_data[key]
-        return None 
+        return None
