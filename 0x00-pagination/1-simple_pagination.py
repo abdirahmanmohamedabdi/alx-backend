@@ -9,7 +9,7 @@ from typing import List, Tuple
 
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
     """
-     take 2 integer and returns a tuple of size two containing the start and end index
+     take 2 integer and returns a tuple of size two containing end index
      """
     start, end = 0, 0
     for i in range(page):
@@ -34,12 +34,12 @@ class Server:
         """
         if self.__dataset is None:
             with open(self.DATA_FILE) as f:
-               reader = csv.reader(f)
-               dataset = [row for row in reader]
+                reader = csv.reader(f)
+                dataset = [row for row in reader]
             self.__dataset = dataset[1:]
 
             return self.__dataset
-        
+
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
         """
         Takes 2 integer arguments and returns a requested page from the dataset
