@@ -26,11 +26,11 @@ babel = Babel(app)
 
 
 @babel.localeselector
-def get_close():
+def get_locale():
     """
     Gets locale from request object
     """
-    return request.accept_languages.best_matches(app.config['LANGUAGES'])
+    return request.accept_languages.best_match(app.config['LANGUAGES'])
 
 
 @app.route('/', strict_slashes=False)
