@@ -7,7 +7,7 @@ from flask import render_template
 from flask_babel import Babel
 
 
-class config(object):
+class Config(object):
     """
     Application configuration class
     """
@@ -18,7 +18,7 @@ class config(object):
 
 # Instantiate the application object
 app = Flask(__name__)
-app.config.from_object(config)
+app.config.from_object(Config)
 
 # Wrap the application with Babel
 babel = Babel(app)
