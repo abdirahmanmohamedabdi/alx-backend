@@ -13,7 +13,7 @@ class Config(object):
     """
     LANGUAGES = ['en', 'fr']
     BABEL_DEFAULT_LOCALE = 'en'
-    BABEL_DEFAULT_TIEMZONE = 'UTC'
+    BABEL_DEFAULT_TIMEZONE = 'UTC'
 
 
 # Instantiate the application object
