@@ -28,6 +28,6 @@ class BasicCache(BaseCaching):
         """
         Gets an item by key
         """
-        if key is not Bone and key in self.cache_data.keys():
+        if key is not None and key in self.cache_data.keys():
             return self.cache_data[key]
         return None
