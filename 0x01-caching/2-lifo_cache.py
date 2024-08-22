@@ -4,7 +4,7 @@
 from base_caching import BaseCaching
 
 
-class LIFOcache(BaseCaching):
+class LIFOCache(BaseCaching):
     """ Defines a class for caching
     """
 
