@@ -37,7 +37,7 @@ class LRUCache(BaseCaching):
         Return the value linked to a given key
         """
         if key is not None and key in self.cache_data.keys():
-            del self.usage.[self.usage.index(key)]
+            del self.usage[self.usage.index(key)]
             self.usage.append(key)
             return self.cache_data[key]
         return None
