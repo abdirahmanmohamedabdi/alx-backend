@@ -9,7 +9,7 @@ class BasicCache(BaseCaching):
     Defines a class for caching
     """
 
-    def__init__(self):
+    def __init__(self):
         """
         Initializes the class
         """
