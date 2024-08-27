@@ -18,7 +18,7 @@ class Config(object):
 
 # instantiate the Flask app
 app = Flask(__name__)
-app.config.from_object(config)
+app.config.from_object(Config)
 
 # wrap the application with the Babel
 babel = Babel(app)
