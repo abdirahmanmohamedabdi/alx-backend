@@ -4,16 +4,16 @@ A basic Flask app
 """
 from flask import Flask
 from flask import render_template
-from flask import Babel
+from flask_babel import Babel
 
 
 class config(object):
     """
     Application configuration class
     """
-    LANGUAGES = ['en', 'fr']
-    BABEL_DEFAULT_LOCALE = 'en'
-    BABEL_DEFAULT_TIMEZONE = 'UTC'
+    LANGUAGES = ["en", "fr"]
+    BABEL_DEFAULT_LOCALE = "en"
+    BABEL_DEFAULT_TIMEZONE = "UTC"
 
 
 # instantiate the Flask app
