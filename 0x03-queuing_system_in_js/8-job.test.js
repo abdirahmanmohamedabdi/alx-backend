@@ -2,7 +2,7 @@ import { describe, it, before, after, afterEach } from 'mocha';
 import { expect } from 'chai';
 import { createQueue } from 'kue';
 
-import createPushNotificationsJobs from './8-job';
+import createPushNotificationsJobs from './8-job.js';
 
 const queue = createQueue();
 
@@ -32,7 +32,7 @@ describe('Test createPushNotificationsJobs function', function() {
             {
                 phoneNumber: '4153518781',
                 message: 'This is the code 4562 to verify your account'
-            }
+            },
         ];
 
         createPushNotificationsJobs(jobs, queue);
