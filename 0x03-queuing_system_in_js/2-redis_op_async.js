@@ -20,12 +20,12 @@ const get = promisify(client.get).bind(client);
 async function displaySchoolValue(schoolName) {
     const result = await get(schoolName).catch((error) => {
         if (error) {
-            console.log(error);
-            throw error;
+          console.log(error);
+          throw error;
         }
     });
     console.log(result);
-}
+}           
 
 displaySchoolValue('Holberton');
 setNewSchool('HolbertonSanFrancisco', '100');
